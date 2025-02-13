@@ -10,7 +10,7 @@ public:
 
 class Shape :public Displayable {
 public:
-	virtual void area() = 0;
+	virtual double area() = 0;
 };
 
 class Rectangle :public Shape{
@@ -39,8 +39,10 @@ public:
 
 	}
 
-	void area() {
-		cout << "The area of the rectangle is = " << (length * height) << endl;
+	double area() {
+		double area = (length * height);
+		cout << "The area of the rectangle is = " << area << endl;
+		return area;
 	}
 };
 
@@ -68,8 +70,10 @@ public:
 		cout << "        ''------''         " << endl;
 	}
 
-	void area() {
-		cout << "The area of the circle is = " << (PI * (radius * radius)) << endl;
+	double area() {
+		double area = (PI * (radius * radius));
+		cout << "The area of the circle is = " << area << endl;
+		return area;
 	}
 };
 
@@ -120,11 +124,37 @@ public:
 
 void draw(Displayable& o) {
 	o.display();
-	cout << "" << endl;
+	cout << endl;
+}
+
+void drive(Vehicle& v) {
+	v.driving();
+	cout << endl;
+}
+
+void getTotalArea(Shape* shapes[], int amount) {
+	double total = 0;
+
+	for (int i = 0; i < amount; i++) {
+		total = total + shapes[i]->area();
+	}
+
+	cout << "Total area of these shapes = " << total << endl;
 }
 
 int main() {
 
+	// Total area function
+	Rectangle rect1(6, 11), rect2(13, 2);
+	Circle circ1(4), circ2(3);
+
+	Shape* shapes[] = { &rect1, &rect2, &circ1, &circ2 };
+
+	getTotalArea(shapes, 4);
+	
+	cout << endl;
+
+	// Displaying Shapes and Vehicles + Drive function
 	Rectangle rectangle1(10, 5);
 	Circle circle1(5);
 	BMW bmw1;
@@ -137,10 +167,10 @@ int main() {
 	circle1.area();
 
 	draw(bmw1);
-	bmw1.driving();
+	drive(bmw1);
 
 	draw(mazda1);
-	mazda1.driving();
+	drive(mazda1);
 
 	return 0;
 }
