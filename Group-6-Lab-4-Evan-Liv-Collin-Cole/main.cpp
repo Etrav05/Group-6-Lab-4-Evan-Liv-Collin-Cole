@@ -4,7 +4,7 @@ using namespace std;
 
 class Displayable {
 public:
-	virtual void draw() = 0;
+	virtual void display() = 0;
 };
 
 class Shape :public Displayable {
@@ -12,12 +12,12 @@ class Shape :public Displayable {
 
 class Rectangle :public Shape{
 public:
-	void draw() {
-		cout << "-----------------------" << endl;
-		cout << "-                     -" << endl;
-		cout << "-      rectangle      -" << endl;
-		cout << "-                     -" << endl;
-		cout << "-----------------------" << endl;
+	void display() {
+		cout << "  -----------------------" << endl;
+		cout << "  -                     -" << endl;
+		cout << "  -      rectangle      -" << endl;
+		cout << "  -                     -" << endl;
+		cout << "  -----------------------" << endl;
 
 
 	}
@@ -25,7 +25,7 @@ public:
 
 class Circle :public Shape {
 public:
-	void draw() {
+	void display() {
 		cout << "        ..------..         " << endl;
 		cout << "      .+          +.       " << endl;
 		cout << "     +              +      " << endl;
@@ -38,11 +38,13 @@ public:
 };
 
 class Vehicle :public Displayable {
+public:
+	virtual void driving();
 };
 
 class BMW :public Vehicle {
 public:
-	void draw() {
+	void display() {
 		cout << "        ..- BMW -..         " << endl;
 		cout << "     .' ..------..  '.      " << endl;
 		cout << "    ' .+=====|     +. '     " << endl;
@@ -55,19 +57,41 @@ public:
 		cout << "       ''---------''       " << endl;
 
 	}
+
+	void driving() {
+		cout << "The BMW is driving" << endl;
+	}
 };
 
-void display(Displayable& o) {
-	o.draw();
+class Mazda : public Vehicle {
+public:
+	void display() {
+		cout << "      ..------------------.." << endl;
+		cout << "     /                   |  '." << endl;
+		cout << "    |                     |    '., " << endl;
+		cout << "    |                      '''''''''''." << endl;
+		cout << "    |                                }o}" << endl;
+		cout << "    |                                }}} " << endl;
+		cout << "    '..../'###'|............|'###'|.../ " << endl;
+		cout << "          ##O##              ##O## " << endl;
+		cout << "           ###                ### " << endl;
+	}
+};
+
+void draw(Displayable& o) {
+	o.display();
 	cout << "" << endl;
 }
 
 int main() {
 
-	Circle c1;
-	BMW bmw;
+	Rectangle rectangle1;
+	Circle circle1;
+	BMW bmw1;
+	Mazda mazda1;
 
-	display(c1);
-	display(bmw);
-
+	draw(rectangle1);
+	draw(circle1);
+	draw(bmw1);
+	draw(mazda1);
 }
