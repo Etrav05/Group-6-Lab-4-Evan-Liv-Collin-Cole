@@ -127,7 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GlobalFuncs.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Shapes.cpp" />
+    <ClCompile Include="Vehicles.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Displayable.h" />
+    <ClInclude Include="GlobalFuncs.h" />
+    <ClInclude Include="Shapes.h" />
+    <ClInclude Include="Vehicles.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
