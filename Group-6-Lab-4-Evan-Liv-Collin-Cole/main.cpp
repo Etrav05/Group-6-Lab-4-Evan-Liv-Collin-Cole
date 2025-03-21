@@ -7,15 +7,19 @@
 #include "Rectangle.h"
 #include "Circle.h"
 
-// Evan
-// Cole
-// Liv
+/// </summary>
+/// @file main.h
+/// 
+///@brief This solution creates various objects with inherited functions from multiple classes then runs these funtions, given these objects, in main
+///
+/// This tests our knowledge and implementation of inheritance, function overriding, virtual function, pure virtual function, polymorphism, and abstract classes
+///@author Evan, Cole, Collin, Liv
+/// </summary>
 
 using namespace std;
 
 int main() {
 
-	// total area function
 	Rectangle rect1(6, 11), rect2(13, 2);
 	Circle circ1(4), circ2(3);
 
@@ -23,9 +27,8 @@ int main() {
 
 	getTotalArea(shapes, 4);
 	
-	cout << endl; // just here to add space
+	cout << endl;
 
-	// displaying Shapes and Vehicles + Drive function
 	Rectangle rectangle1(10, 5);
 	Circle circle1(5);
 	
