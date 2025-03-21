@@ -127,14 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GlobalFuncs.cpp" />
+    <ClCompile Include="BMW.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Displayable.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mazda.cpp" />
+    <ClCompile Include="Mazda.h" />
+    <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Shapes.cpp" />
     <ClCompile Include="Vehicles.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BMW.h" />
+    <ClInclude Include="Circle.h" />
     <ClInclude Include="Displayable.h" />
-    <ClInclude Include="GlobalFuncs.h" />
+    <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Shapes.h" />
     <ClInclude Include="Vehicles.h" />
   </ItemGroup>

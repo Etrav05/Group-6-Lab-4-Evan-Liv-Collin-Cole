@@ -1,20 +1,12 @@
-#include <iostream>
 #pragma once
+#include <iostream>
+
+using namespace std;
 
 // Vehicles interface
-class Vehicle :public Displayable {
+class Vehicle {
 public:
 	virtual void driving() = 0;
 };
 
-class BMW :public Vehicle {
-public:
-	void display();
-	void driving();
-};
-
-class Mazda : public Vehicle {
-public:
-	void display();
-	void driving();
-};
+void drive(Vehicle& v);

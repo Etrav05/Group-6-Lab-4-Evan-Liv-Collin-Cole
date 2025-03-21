@@ -1,14 +1,21 @@
 #include <iostream>
 #include "Displayable.h"
-#include "GlobalFuncs.h"
 #include "Vehicles.h"
+#include "BMW.h"
+#include "Mazda.h"	
 #include "Shapes.h"
+#include "Rectangle.h"
+#include "Circle.h"
+
+// Evan
+// Cole
+// Liv
 
 using namespace std;
 
 int main() {
 
-	// Total area function
+	// total area function
 	Rectangle rect1(6, 11), rect2(13, 2);
 	Circle circ1(4), circ2(3);
 
@@ -16,9 +23,9 @@ int main() {
 
 	getTotalArea(shapes, 4);
 	
-	cout << endl;
+	cout << endl; // just here to add space
 
-	// Displaying Shapes and Vehicles + Drive function
+	// displaying Shapes and Vehicles + Drive function
 	Rectangle rectangle1(10, 5);
 	Circle circle1(5);
 	
