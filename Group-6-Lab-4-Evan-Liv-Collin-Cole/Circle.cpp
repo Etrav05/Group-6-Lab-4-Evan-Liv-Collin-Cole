@@ -1,14 +1,23 @@
 #include "Circle.h"
 
-Circle::Circle() { // circle() constructor 
+/// @brief Default constructor for the Circle class
+///
+/// Initializes the radius to 0
+Circle::Circle() {
 	radius = 0;
 }
 
-Circle::Circle(int r) { // circle(int r) constructor 
+/// @brief Parameterized constructor for the Circle class
+///
+/// Initializes the radius to "r" parameter
+Circle::Circle(int r) {
 	radius = r;
 }
 
-void Circle::display() { // display a circle
+/// @brief Displays a circle in ASCII art
+///
+/// This function outputs a representation of a circle using text characters to the console
+void Circle::display() {
 	cout << "        ..------..         " << endl;
 	cout << "      .+          +.       " << endl;
 	cout << "     +              +      " << endl;
@@ -19,7 +28,13 @@ void Circle::display() { // display a circle
 	cout << "        ''------''         " << endl;
 }
 
-double Circle::area() { // find, print and return the area of a circle
+/// @brief Calculates the area of a circle object
+///
+/// This function calculates the formula of a circles area (Pi * (radius * radius)) given a circle objects radius attribute
+/// This function then outputs a message of this calculated area
+/// 
+/// @return The calculated area of the circle
+double Circle::area() {
 	double area = (PI * (radius * radius));
 	cout << "The area of the circle is = " << area << endl;
 	return area;

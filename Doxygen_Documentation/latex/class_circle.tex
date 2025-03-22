@@ -1,0 +1,128 @@
+\doxysection{Circle Class Reference}
+\hypertarget{class_circle}{}\label{class_circle}\index{Circle@{Circle}}
+
+
+\doxylink{class_circle}{Circle} Class defining the \doxylink{class_circle}{Circle} attribute and behaviours.  
+
+
+
+
+{\ttfamily \#include $<$Circle.\+h$>$}
+
+
+
+Inheritance diagram for Circle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_circle__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_circle_ad1ecfcfc7bf34529c6a6d6c448bf70fe}{Circle}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for a circle object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_circle_af532721d3a50c1aaddc28c12632a1ca7}{Circle}} (int r)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for a circle object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_a80cdfdaf37bb9b1b49f18a843765e032}{display}} ()
+\begin{DoxyCompactList}\small\item\em Function to display a circle. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_circle_a4f31d14f360b6e1f1acfb283ad65145a}{area}} ()
+\begin{DoxyCompactList}\small\item\em Function to calculate the area of a circle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_circle_a897ad7e556f1e90142093c69079d8b05}\label{class_circle_a897ad7e556f1e90142093c69079d8b05} 
+int {\bfseries radius}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_circle}{Circle} Class defining the \doxylink{class_circle}{Circle} attribute and behaviours. 
+
+Defines the attribute of radius as an integer and the behaviours of default/parameterized constructors, display function, and area function 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_circle_ad1ecfcfc7bf34529c6a6d6c448bf70fe}\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{Circle()}{Circle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_circle_ad1ecfcfc7bf34529c6a6d6c448bf70fe} 
+Circle\+::\+Circle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor for a circle object. 
+
+Default constructor for the \doxylink{class_circle}{Circle} class.
+
+This function will be the default call for creating a circle
+
+Initializes the radius to 0 \Hypertarget{class_circle_af532721d3a50c1aaddc28c12632a1ca7}\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{Circle()}{Circle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_circle_af532721d3a50c1aaddc28c12632a1ca7} 
+Circle\+::\+Circle (\begin{DoxyParamCaption}\item[{int}]{r}{}\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor for a circle object. 
+
+Parameterized constructor for the \doxylink{class_circle}{Circle} class.
+
+This function will assign values to a circle attributes, radius set to "{}r"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & an int value\\
+\hline
+\end{DoxyParams}
+Initializes the radius to "{}r"{} parameter 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_circle_a4f31d14f360b6e1f1acfb283ad65145a}\index{Circle@{Circle}!area@{area}}
+\index{area@{area}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily \label{class_circle_a4f31d14f360b6e1f1acfb283ad65145a} 
+double Circle\+::area (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function to calculate the area of a circle. 
+
+Calculates the area of a circle object.
+
+This function will calculate the area of a circle given its attribute, radius
+
+This function calculates the formula of a circles area (Pi \texorpdfstring{$\ast$}{*} (radius \texorpdfstring{$\ast$}{*} radius)) given a circle objects radius attribute This function then outputs a message of this calculated area
+
+\begin{DoxyReturn}{Returns}
+The calculated area of the circle 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_shape_aa3072fde001d5174f78fcc484c11870c}{Shape}}.
+
+\Hypertarget{class_circle_a80cdfdaf37bb9b1b49f18a843765e032}\index{Circle@{Circle}!display@{display}}
+\index{display@{display}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_circle_a80cdfdaf37bb9b1b49f18a843765e032} 
+void Circle\+::display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function to display a circle. 
+
+Displays a circle in ASCII art.
+
+This function will print a set shape of a circle when called
+
+This function outputs a representation of a circle using text characters to the console 
+
+Implements \mbox{\hyperlink{class_displayable_ab152fa41c004f2fb4d73fdebe4cc1787}{Displayable}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/source/repos/\+Group-\/6-\/\+Lab-\/4-\/\+Evan-\/\+Liv-\/\+Collin-\/\+Cole/\+Group-\/6-\/\+Lab-\/4-\/\+Evan-\/\+Liv-\/\+Collin-\/\+Cole/\mbox{\hyperlink{_circle_8h}{Circle.\+h}}\item 
+C\+:/\+Users/\+User/source/repos/\+Group-\/6-\/\+Lab-\/4-\/\+Evan-\/\+Liv-\/\+Collin-\/\+Cole/\+Group-\/6-\/\+Lab-\/4-\/\+Evan-\/\+Liv-\/\+Collin-\/\+Cole/Circle.\+cpp\end{DoxyCompactItemize}

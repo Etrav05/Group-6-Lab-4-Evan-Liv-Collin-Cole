@@ -1,6 +1,9 @@
 #include "BMW.h"
 
-void BMW::display() { // display the logo of a BMW
+/// @brief Displays the BMW logo in ASCII art
+///
+/// This function outputs a representation of the BMW logo using text characters to the console
+void BMW::display() {
 	cout << "        ..- BMW -..         " << endl;
 	cout << "     .' ..------..  '.      " << endl;
 	cout << "    ' .+=====|     +. '     " << endl;
@@ -13,6 +16,9 @@ void BMW::display() { // display the logo of a BMW
 	cout << "       ''---------''       " << endl;
 }
 
-void BMW::driving() { // drive the BMW
+/// @brief Displays the driving message of a BMW
+///
+/// This function outputs a message representing a BMW driving
+void BMW::driving() {
 	cout << "The BMW is driving" << endl;
 }

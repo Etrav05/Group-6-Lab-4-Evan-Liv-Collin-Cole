@@ -1,0 +1,64 @@
+\doxysection{C\+:/\+Users/\+User/source/repos/\+Group-\/6-\/\+Lab-\/4-\/\+Evan-\/\+Liv-\/\+Collin-\/\+Cole/\+Group-\/6-\/\+Lab-\/4-\/\+Evan-\/\+Liv-\/\+Collin-\/\+Cole/\+Vehicles.h File Reference}
+\hypertarget{_vehicles_8h}{}\label{_vehicles_8h}\index{C:/Users/User/source/repos/Group-\/6-\/Lab-\/4-\/Evan-\/Liv-\/Collin-\/Cole/Group-\/6-\/Lab-\/4-\/Evan-\/Liv-\/Collin-\/Cole/Vehicles.h@{C:/Users/User/source/repos/Group-\/6-\/Lab-\/4-\/Evan-\/Liv-\/Collin-\/Cole/Group-\/6-\/Lab-\/4-\/Evan-\/Liv-\/Collin-\/Cole/Vehicles.h}}
+
+
+Header file defining the \doxylink{class_vehicle}{Vehicle} interface and related functions.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for Vehicles.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{_vehicles_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{_vehicles_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_vehicle}{Vehicle}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_vehicle}{Vehicle} Abstract Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_vehicles_8h_a4fc743b828d9dd8dedcc7280f2b2c3ad}{drive}} (\mbox{\hyperlink{class_vehicle}{Vehicle}} \&v)
+\begin{DoxyCompactList}\small\item\em Function to "{}drive"{} a vehicle (Print "{}\+Object"{} is driving) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file defining the \doxylink{class_vehicle}{Vehicle} interface and related functions. 
+
+Defines the behaviour of Vehicles, specifically the driving function, as well as the drive function of \doxylink{class_vehicle}{Vehicle} objects 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_vehicles_8h_a4fc743b828d9dd8dedcc7280f2b2c3ad}\index{Vehicles.h@{Vehicles.h}!drive@{drive}}
+\index{drive@{drive}!Vehicles.h@{Vehicles.h}}
+\doxysubsubsection{\texorpdfstring{drive()}{drive()}}
+{\footnotesize\ttfamily \label{_vehicles_8h_a4fc743b828d9dd8dedcc7280f2b2c3ad} 
+void drive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vehicle}{Vehicle}} \&}]{v}{}\end{DoxyParamCaption})}
+
+
+
+Function to "{}drive"{} a vehicle (Print "{}\+Object"{} is driving) 
+
+This function takes a \doxylink{class_vehicle}{Vehicle} object and calls its driving method This is polymorphism by working with any object that implements the \doxylink{class_vehicle}{Vehicle} interface
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Reference to a \doxylink{class_vehicle}{Vehicle} object.\\
+\hline
+\end{DoxyParams}
+This function takes a \doxylink{class_vehicle}{Vehicle} object and calls its driving method Then adds an extra line for formatting reasons with "{}cout $<$$<$ endl;"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Reference to a \doxylink{class_vehicle}{Vehicle} object. \\
+\hline
+\end{DoxyParams}

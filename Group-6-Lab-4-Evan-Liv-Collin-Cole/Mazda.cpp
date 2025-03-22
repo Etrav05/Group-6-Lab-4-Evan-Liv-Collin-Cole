@@ -1,6 +1,9 @@
 #include "Mazda.h"
 
-void Mazda::display() { // display art of a Mazda
+/// @brief Displays a Mazda SUV in ASCII art.
+///
+/// This function outputs a representation of a Mazda SUV using text characters to the console
+void Mazda::display() {
 	cout << "      ..------------------.." << endl;
 	cout << "     /                   |  '." << endl;
 	cout << "    |                     |    '., " << endl;
@@ -12,6 +15,9 @@ void Mazda::display() { // display art of a Mazda
 	cout << "           ###                ### " << endl;
 }
 
-void Mazda::driving() { // drive the Mazda
+/// @brief Displays the driving message of a Mazda
+///
+/// This function outputs a message representing a Mazda driving 
+void Mazda::driving() {
 	cout << "The Mazda is driving" << endl;
 }

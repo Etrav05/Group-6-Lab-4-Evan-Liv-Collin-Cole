@@ -1,0 +1,68 @@
+\doxysection{C\+:/\+Users/\+User/source/repos/\+Group-\/6-\/\+Lab-\/4-\/\+Evan-\/\+Liv-\/\+Collin-\/\+Cole/\+Group-\/6-\/\+Lab-\/4-\/\+Evan-\/\+Liv-\/\+Collin-\/\+Cole/\+Shapes.h File Reference}
+\hypertarget{_shapes_8h}{}\label{_shapes_8h}\index{C:/Users/User/source/repos/Group-\/6-\/Lab-\/4-\/Evan-\/Liv-\/Collin-\/Cole/Group-\/6-\/Lab-\/4-\/Evan-\/Liv-\/Collin-\/Cole/Shapes.h@{C:/Users/User/source/repos/Group-\/6-\/Lab-\/4-\/Evan-\/Liv-\/Collin-\/Cole/Group-\/6-\/Lab-\/4-\/Evan-\/Liv-\/Collin-\/Cole/Shapes.h}}
+
+
+Header file defining the \doxylink{class_shape}{Shape} interface and related functions.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for Shapes.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{_shapes_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{_shapes_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_shape}{Shape}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_shape}{Shape} Abstract Class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_shapes_8h_a83d32268732eabcc8a18e65f7a5336f5}{get\+Total\+Area}} (\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}shapes\mbox{[}$\,$\mbox{]}, int amount)
+\begin{DoxyCompactList}\small\item\em Function to get the total area of an array of shapes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file defining the \doxylink{class_shape}{Shape} interface and related functions. 
+
+Defines the behaviour of Shapes, specifically the area function, as well as the get\+Total\+Area function of \doxylink{class_shape}{Shape} objects 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_shapes_8h_a83d32268732eabcc8a18e65f7a5336f5}\index{Shapes.h@{Shapes.h}!getTotalArea@{getTotalArea}}
+\index{getTotalArea@{getTotalArea}!Shapes.h@{Shapes.h}}
+\doxysubsubsection{\texorpdfstring{getTotalArea()}{getTotalArea()}}
+{\footnotesize\ttfamily \label{_shapes_8h_a83d32268732eabcc8a18e65f7a5336f5} 
+void get\+Total\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shape}{Shape}} \texorpdfstring{$\ast$}{*}}]{shapes}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+Function to get the total area of an array of shapes. 
+
+This function takes an array of shape objects and calls their area methods This is polymorphism by working with any object that implements the \doxylink{class_vehicle}{Vehicle} interface
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape\mbox{[}$\,$\mbox{]}} & Pointer to an array of shape objects \\
+\hline
+{\em amount} & Number of shapes in parameter "{}shape\mbox{[}$\,$\mbox{]}"{} array\\
+\hline
+\end{DoxyParams}
+This function iterates through the array of shape objects, given the inputted amount, and calls their area methods, adding each area value to a "{}total"{} variable This funtion then printings this total area along with a message
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape\mbox{[}$\,$\mbox{]}} & Pointer to an array of shape objects \\
+\hline
+{\em amount} & Number of shapes in parameter "{}shape\mbox{[}$\,$\mbox{]}"{} array \\
+\hline
+\end{DoxyParams}

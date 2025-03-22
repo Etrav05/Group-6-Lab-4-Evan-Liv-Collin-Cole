@@ -1,0 +1,7 @@
+<map id="Rectangle" name="Rectangle">
+<area shape="rect" id="Node000001" title="Rectangle Class defining the Rectangle attributes and behaviours." alt="" coords="34,123,123,277"/>
+<area shape="rect" id="Node000002" href="$class_shape.html" title="Shape Abstract Class." alt="" coords="5,5,61,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,88,59,122,54,124,44,90"/>
+<area shape="rect" id="Node000003" href="$class_displayable.html" title="Displayable Abstract Class." alt="" coords="85,5,165,75"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,90,104,124,99,122,109,88"/>
+</map>

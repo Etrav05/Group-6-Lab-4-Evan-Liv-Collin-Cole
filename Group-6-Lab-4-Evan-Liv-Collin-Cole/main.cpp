@@ -7,14 +7,13 @@
 #include "Rectangle.h"
 #include "Circle.h"
 
-/// </summary>
 /// @file main.h
 /// 
-///@brief This solution creates various objects with inherited functions from multiple classes then runs these funtions, given these objects, in main
+/// @brief This solution creates various objects with inherited functions from multiple classes then runs these funtions, given these objects, in main
 ///
 /// This tests our knowledge and implementation of inheritance, function overriding, virtual function, pure virtual function, polymorphism, and abstract classes
-///@author Evan, Cole, Collin, Liv
-/// </summary>
+/// @author Evan, Cole, Collin, Liv
+/// @date 21/03/2025
 
 using namespace std;
 
